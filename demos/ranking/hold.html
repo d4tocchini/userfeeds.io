@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Claims for context X sorted by Hold:</title>
+</head>
+<body>
+  <script>
+    fetch('https://api.userfeeds.io/ranking/rinkeby:0xfe5da6ae3f65e7d5ce29121a9f5872ffd83b45e6/hold/')
+    .then(function(response) {
+      return response.json();
+    })
+    .then(function(ranking) {
+      var div = document.getElementById('ranking');
+
+      for (let i = 0; i < ranking.items.length; i++) {
+        let item = ranking.items[i];
+        let post = `
+          <div>
+            ${i}
+            <a href="${item.target}">${item.target}</a><br/>
+            <span>Score: ${item.score}</span>
+          </div><br/>
+        `;
+        div.innerHTML += post;
+      }
+    });
+  </script>
+  <h2>Claims for context X sorted by Hold:</h2>
+  <div id="ranking"></div>
+</body>
+</html>
+
+
