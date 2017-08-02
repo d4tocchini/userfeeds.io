@@ -2,7 +2,8 @@
 .link-exchange {
   background: url(../img/cover8.jpg) no-repeat center bottom fixed;
   width: 100vw;
-  height: 40vh;
+  min-height: 40vh;
+  padding: 50px;
   background-size: 100% 100%;
   display: flex;
   flex-direction: column;
