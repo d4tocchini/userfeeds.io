@@ -1,0 +1,48 @@
+.ct_70unrFlg {
+position: absolute;
+top: 0;
+right: 0;
+height: 15px;
+width: 15px;
+display: block !important;
+z-index: 9999;
+}
+.ct_70unrFlg img.ct_70unrFimg {
+position: absolute;
+top: 0;
+right: 0;
+margin: 0;
+padding: 0;
+}
+.ct_70unrFtx {
+visibility: hidden;
+opacity: 0;
+transition: visibility 0s, opacity 0.5s linear;
+color: #000 !important;
+font-family: Verdana;
+background: #fff !important;
+font-size:10px !important;
+position:absolute !important;
+top: 0 !important;
+right: 15px !important;
+width: 110px !important;
+text-align: center;
+height: 15px !important;
+line-height: 14px !important;
+padding: 0 !important;
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+}
+.ct_70unrFtx a.ct_70unrFlnk {
+line-height: 14px !important;
+font-size:10px !important;
+font-family: Verdana;
+color: #000 !important;
+text-decoration: none !important;
+}
+.ct_70unrFlg:hover .ct_70unrFtx {
+visibility: visible;
+opacity: 1;
+}
+        
