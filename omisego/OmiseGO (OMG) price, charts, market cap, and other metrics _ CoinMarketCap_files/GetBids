@@ -1,0 +1,16 @@
+typeof window.parent.kmn_hdbd.globalPbjsObject.kmnHdbdHandlers.s2s.readHdbdResponse === 'function' && window.parent.kmn_hdbd.globalPbjsObject.kmnHdbdHandlers.s2s.readHdbdResponse({
+  "results": [
+    {
+      "placementid": "0c749a3c08941c23619df0ff76b1369a",
+      "code": "p1",
+      "creative": "",
+      "network": "pubmatic"
+    },
+    {
+      "placementid": "386e40457d4a1238421745637817317d",
+      "code": "p1",
+      "creative": "",
+      "network": "pubmatic"
+    }
+  ]
+});
