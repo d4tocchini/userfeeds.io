@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+  <div class="purr container">
+    <div class="container" style="align-items: center;">
+      <div class="cat-avatar">
+        <img src="" class="cat-avatar-img">
+      </div>
+      <div class="message-container">
+        <p class="cat-id">Kitty #</p>
+        <p class="message"></p>
+      </div>
+      <canvas class="qr"></canvas>
+    </div>
+    <div class="footer"></div>
+  </div>
+
+<style>
+  .purr {
+    flex-direction: column;
+    border: 1px solid #ECE9E8;
+    border-radius: 12px;
+    overflow: hidden;
+    width: 500px;
+  }
+
+  .container {
+    display: flex;
+  }
+
+  .cat-avatar {
+    margin-left: 10px;
+    width: 70px;
+    height: 70px;
+    border-radius: 70px;
+    background-color: #ECE9E8;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .cat-avatar-img {
+    position: absolute;
+    top: -5px;
+    left: -15px;
+    width: 100px;
+    height: 100px;
+  }
+
+  .message-container {
+    margin: 0 20px;
+  }
+
+  .qr {
+    margin-left: auto;
+  }
+
+  .cat-id {
+    font-weight: bold;
+    font-size: 13px;
+  }
+
+  .message {
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+  .footer {
+    background-color: #ECE9E8;
+    text-align: center;
+    padding: 10px;
+
+  }
+</style>
+<script type="text/javascript" src="bundle.js"></script></body>
+</html>
