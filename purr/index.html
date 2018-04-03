@@ -18,12 +18,20 @@
   </div>
 
 <style>
+  body {
+    margin: 0;
+  }
+
   .purr {
     flex-direction: column;
+    justify-content: space-between;
     border: 1px solid #ECE9E8;
     border-radius: 12px;
     overflow: hidden;
-    width: 500px;
+    margin-top: 5px;
+    margin-left: 5px;
+    width: calc(100vw - 10px);
+    height: calc(100vh - 10px);
   }
 
   .container {
@@ -31,6 +39,7 @@
   }
 
   .cat-avatar {
+    flex-shrink: 0;
     margin-left: 10px;
     width: 70px;
     height: 70px;
