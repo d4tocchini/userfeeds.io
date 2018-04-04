@@ -1,86 +1,119 @@
 <!DOCTYPE html>
+
 <html>
+
 <head>
+  <title>Kitties Rendering</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Rubik:400,500" rel="stylesheet">
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
 </head>
+
 <body>
-  <div class="purr container">
-    <div class="container" style="align-items: center;">
-      <div class="cat-avatar">
-        <img src="" class="cat-avatar-img">
+  <div class="device">
+    <div class="main">
+      <div class="kitten">
+        <img src="">
       </div>
-      <div class="message-container">
-        <p class="cat-id">Kitty #</p>
-        <p class="message"></p>
+      <div class="text">
+        <p></p>
       </div>
-      <canvas class="qr"></canvas>
+      <div class="footer">
+        <div class="footer-content">
+          <h3 class="kitty-name"></h3>
+          <h4 class="link"></h4>
+        </div>
+        <div class="qr">
+          <canvas></canvas>
+        </div>
+      </div>
     </div>
-    <div class="footer"></div>
   </div>
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+    }
 
-<style>
-  body {
-    margin: 0;
-  }
+    * {
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      box-sizing: border-box;
+    }
 
-  .purr {
-    flex-direction: column;
-    justify-content: space-between;
-    border: 1px solid #ECE9E8;
-    border-radius: 12px;
-    overflow: hidden;
-    margin-top: 5px;
-    margin-left: 5px;
-    width: calc(100vw - 10px);
-    height: calc(100vh - 10px);
-  }
+    .device {
+      width: 100%;
+    }
 
-  .container {
-    display: flex;
-  }
+    .main {
+      position: relative;
+      width: 1020px;
+      height: 765px;
+      font-family: 'Rubik', sans-serif;
+      padding: 50px;
+    }
 
-  .cat-avatar {
-    flex-shrink: 0;
-    margin-left: 10px;
-    width: 70px;
-    height: 70px;
-    border-radius: 70px;
-    background-color: #ECE9E8;
-    overflow: hidden;
-    position: relative;
-  }
+    .kitten img {
+      width: 120px;
+      height: 120px;
+      border-radius: 120px;
+    }
 
-  .cat-avatar-img {
-    position: absolute;
-    top: -5px;
-    left: -15px;
-    width: 100px;
-    height: 100px;
-  }
+    .text {
+      max-height: 70%;
+    }
 
-  .message-container {
-    margin: 0 20px;
-  }
+    .text p {
+      text-align: left;
+      line-height: 1.1;
+      color: #060310;
+      font-weight: 500;
+      max-width: 1020px;
+      word-wrap: break-word;
+      ;
 
-  .qr {
-    margin-left: auto;
-  }
+    }
 
-  .cat-id {
-    font-weight: bold;
-    font-size: 13px;
-  }
+    .footer {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      bottom: 20px;
+      width: calc(100% - 2 * 50px);
+      left: 50px;
+    }
 
-  .message {
-    font-weight: bold;
-    font-size: 16px;
-  }
+    .footer-content {
+      overflow: hidden;
+    }
 
-  .footer {
-    background-color: #ECE9E8;
-    text-align: center;
-    padding: 10px;
+    .footer h3 {
+      font-size: 48px;
+      color: #060310;
+      font-weight: 500;
+      margin-bottom: 0;
+    }
 
-  }
-</style>
+    .footer h4 {
+      margin-top: 10px;
+      font-size: 24px;
+      color: #928F9B;
+      font-weight: 400;
+    }
+
+    .qr {
+      margin-left: auto;
+    }
+
+    canvas {
+      background-color: grey;
+      width: 100px;
+      height: 100px;
+    }
+  </style>
+
 <script type="text/javascript" src="bundle.js"></script></body>
+
 </html>
